@@ -18,16 +18,16 @@ import lombok.Setter;
 public class Employee {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column
+	@Column(name="id")
 	private long id;
 	
-	@Column
+	@Column(name="name")
 	private String name;
 	
-	@Column
+	@Column(name="phone")
 	private String phone;
 	
-	@Column
+	@Column(name="email")
 	private String email;
 
 	public long getId() {
